@@ -39,3 +39,5 @@ http://natalia.trol.pl/praktyki2022-luty/makecocktailsathome.jpg
 7. Koktajle dodane do Ulubonych powinny zostać zapamiętane przez przeglądarkę, tak aby użytkownik mógł wrócić do swojej listy podczas kolejnych wizyt na stronie.
 
 8. Kliknięcie przycisku Ulubione w top powinno spowodować wyświetlenie na liście koktajli znajdujących się w Ulubionych, a nagłówek powinen zmienić się na "Ulubione". Jeśli użytkownik nie ma ulubionych koktajli, powinien wyświetlić się stosowny komunikat.
+
+9. Minimalna szerokość, do której projekt powinien prezentować się dobrze to 320px, powyżej 1920px layout nie powinien się już skalować w górę tylko zostać na stałej szerokości (takiej jak na projekcie) i tylko centrować się w poziomie.
