@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lr841');
-  src:  url('fonts/icomoon.eot?lr841#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lr841') format('truetype'),
-    url('fonts/icomoon.woff?lr841') format('woff'),
-    url('fonts/icomoon.svg?lr841#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?sffcrq');
+  src:  url('../fonts/icomoon.eot?sffcrq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?sffcrq') format('truetype'),
+    url('../fonts/icomoon.woff?sffcrq') format('woff'),
+    url('../fonts/icomoon.svg?sffcrq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  speak-as: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -31,15 +31,15 @@
 .icon-heart-fill:before {
   content: "\e901";
 }
-.icon-search:before {
+.icon-sm-inst:before {
   content: "\e902";
 }
-.icon-sm-fb:before {
+.icon-sm-yt:before {
   content: "\e903";
 }
-.icon-sm-inst:before {
+.icon-sm-fb:before {
   content: "\e904";
 }
-.icon-sm-yt:before {
+.icon-search:before {
   content: "\e905";
 }
