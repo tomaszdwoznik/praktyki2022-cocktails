@@ -1,9 +1,50 @@
 .top{
-    display: block;
     height: 190px;
-    
+    display: flex;
+    justify-content: space-around; 
 }
-
 .banner-image{
     width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+.main{
+    height: 2350px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.btn-footer{
+    margin: 5px;
+    padding: 6px;
+    font-size: 18px;
+    height: 32px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(224, 224, 224);
+}
+.footer-a{
+    text-decoration: none;
+    color: none;
+}
+.footer-a:visited{
+    text-decoration: none;
+    color: black;
+}
+.footer-text{
+    float: right;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292836;
+    font-weight: 400;
+    font-family: "Montserrat";
 }
