@@ -1,0 +1,17 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.footer__text{
+    font-size: 14px;
+    line-height: 20px;
+    color: #292836;
+    font-family: "Montserrat";
+}
