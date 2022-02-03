@@ -1,15 +1,9 @@
 @media screen and (max-width: 1920px){
-    .banner__image{
-        height: 15vh;
-    }
     .top{
         height: 15vh !important;
     }
 }
-@media screen and (max-width: 750px){
-    .banner__image{
-        height: 12vh;
-    }
+@media screen and (max-width: 755px){
     .top{
         height: 12.5vh !important;
     }
