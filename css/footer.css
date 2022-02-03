@@ -1,6 +1,17 @@
 .footer{
+<<<<<<< HEAD
     height: 100px;
     background-color: rgb(245, 245, 245);
+=======
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(245, 245, 245);
+    padding-left: 5%;
+    padding-right: 5%;
+>>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
 }
 
 .footer__text{
@@ -8,6 +19,7 @@
     line-height: 20px;
     color: #292836;
     font-family: "montserratlight";
+<<<<<<< HEAD
 }
 
 .container--footer{
@@ -17,3 +29,6 @@
     align-content: center;
     height: 100px;
 }
+=======
+}
+>>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
