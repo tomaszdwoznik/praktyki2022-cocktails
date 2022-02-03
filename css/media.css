@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> develop
 @media screen and (max-width: 1920px){
     .banner__image{
         height: 15vh;
@@ -29,6 +32,7 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 0.5%;
+<<<<<<< HEAD
 =======
 @media screen and (max-width: 768px){
     .banner__image{
@@ -60,12 +64,17 @@
         justify-content: space-between;
         padding-bottom: 2.5%;
 >>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
+=======
+>>>>>>> develop
     }
     .footer__text{
         display: flex;
         justify-content: center;
         text-align: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> develop
         font-size: 55% !important;
         line-height: 1.5em !important;
     }
@@ -76,6 +85,7 @@
     }
 }
 
+<<<<<<< HEAD
 =======
         font-size: 50% !important;
         line-height: 120% !important;
@@ -88,3 +98,5 @@
     }
 }
 >>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
+=======
+>>>>>>> develop
