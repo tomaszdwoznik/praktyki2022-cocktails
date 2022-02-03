@@ -1,6 +1,4 @@
-.banner-image{
-    width: 100%;
-    position: absolute;
-    right: 0;
-    left: 0;
+.banner__image{
+    max-width: 100%;
+    height: auto;
 }

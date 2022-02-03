@@ -4,3 +4,7 @@
     justify-content: space-around;
     align-items: center;
 }
+.container--top{
+    display: flex;
+    justify-content: space-evenly;
+}
