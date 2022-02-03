@@ -5,8 +5,6 @@
 a, a:visited, a:link, a:hover{
     text-decoration: none;
     color: black;
-}
-.btn{
     margin: 5px;
     padding: 6px;
     font-size: 18px;
