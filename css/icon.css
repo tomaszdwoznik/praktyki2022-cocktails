@@ -9,28 +9,6 @@
   font-style: normal;
   font-display: block;
 }
-
-@font-face{
-  font-family: 'montserratsemi_bold';
-  src: url('../fonts/montserrat-semibold-webfont-webfont.woff2') format('woff2'),
-       url('../fonts/montserrat-semibold-webfont-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'montserratregular';
-  src: url('../fonts/montserrat-regular-webfont-webfont.woff2') format('woff2'),
-       url('../fonts/montserrat-regular-webfont-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'montserratlight';
-  src: url('../fonts/montserrat-light-webfont-webfont.woff2') format('woff2'),
-       url('../fonts/montserrat-light-webfont-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 @font-face {
   font-family: 'montserratregular';
   src: url('../fonts/montserrat-regular-webfont-webfont.woff2') format('woff2'),
