@@ -9,10 +9,7 @@
   font-style: normal;
   font-display: block;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> develop
+
 @font-face{
   font-family: 'montserratsemi_bold';
   src: url('../fonts/montserrat-semibold-webfont-webfont.woff2') format('woff2'),
@@ -34,19 +31,6 @@
   font-weight: normal;
   font-style: normal;
 }
-<<<<<<< HEAD
-=======
-@font-face {
-  font-family: 'montserratsemi_bold';
-  src: url('../fonts/montserrat-semibold-webfont-webfont.woff2') format('woff2'),
-  url('../fonts/montserrat-semibold-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
->>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
-
-}
-=======
->>>>>>> develop
 @font-face {
   font-family: 'montserratregular';
   src: url('../fonts/montserrat-regular-webfont-webfont.woff2') format('woff2'),
