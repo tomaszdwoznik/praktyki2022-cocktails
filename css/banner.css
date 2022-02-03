@@ -1,4 +1,10 @@
-.banner__image{
-    max-width: 100%;
-    height: auto;
+@media screen and (max-width: 480px){
+    .banner{
+        max-height: 100px;
+    }
+    .banner__image{
+        object-fit: cover;
+        min-height: 150px;
+        display: block;
+    }
 }
