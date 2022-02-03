@@ -6,8 +6,13 @@
 a, a:visited, a:link, a:hover{
     text-decoration: none;
     color: black;
+<<<<<<< HEAD
     margin: 6px;
     padding: 6px 6px 4px 6px;
+=======
+    margin: 5px;
+    padding: 6px;
+>>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
     font-size: 18px;
     height: 32px;
     background-color: white;

@@ -9,6 +9,7 @@
   font-style: normal;
   font-display: block;
 }
+<<<<<<< HEAD
 @font-face{
   font-family: 'montserratsemi_bold';
   src: url('../fonts/montserrat-semibold-webfont-webfont.woff2') format('woff2'),
@@ -31,7 +32,31 @@
   font-weight: normal;
   font-style: normal;
 }
+=======
+@font-face {
+  font-family: 'montserratsemi_bold';
+  src: url('../fonts/montserrat-semibold-webfont-webfont.woff2') format('woff2'),
+  url('../fonts/montserrat-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+>>>>>>> fb87b1c6b87e0ad80c4938d764ff7a397500e9be
 
+}
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../fonts/montserrat-regular-webfont-webfont.woff2') format('woff2'),
+  url('../fonts/montserrat-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'montserratlight';
+  src: url('../fonts/montserrat-light-webfont-webfont.woff2') format('woff2'),
+  url('../fonts/montserrat-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
