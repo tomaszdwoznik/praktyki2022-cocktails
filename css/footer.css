@@ -1,5 +1,8 @@
-.footer{
+.footer, .container--footer{
     height: 100px;
+}
+
+.footer{
     background-color: rgb(245, 245, 245);
 }
 
@@ -9,10 +12,56 @@
     color: #292836;
     font-family: "montserratlight";
 }
+
 .container--footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    height: 100px;
+}
+
+.footer__a, .footer__a:visited, .footer__a:link, .footer__a:hover{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+    margin: 2px;
+    padding: 6px 6px 2px 6px;
+    font-size: 22px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+.footer__socialmedia{
+    padding: 10px 5px 5px 5px;
+}
+
+@media screen and (max-width: 780px){
+    .container--footer{
+        background-color: rgb(245, 245, 245);
+        flex-direction: column !important;
+        padding-bottom: 5vh;   
+        padding-top: 2vh;
+    }
+    .footer__socialmedia{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.5%;
+    }
+    .footer__text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 55% !important;
+        line-height: 1.5em !important;
+    }
+    
+    .footer__a, .footer__a:visited, .footer__a:link, .footer__a:hover{ 
+        padding: 0.4vh !important;
+        font-size: 1.8vh;
+        height: 2.8vh;
+        }
+
+    .footer__socialmedia{
+        padding: 0px 5px 5px 5px;
+        }
 }

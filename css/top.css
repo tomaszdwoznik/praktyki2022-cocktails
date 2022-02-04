@@ -8,3 +8,17 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 1920px){
+    .top{
+        height: 15vh !important;
+    }
+}
+@media screen and (max-width: 755px){
+    .top{
+        height: 12.5vh !important;
+    }
+    .top__image{
+        height: 8vh;
+    }
+}

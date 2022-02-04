@@ -1,20 +1,8 @@
 .container{
-    width: 100vw;
     padding: 0% 8% 0% 8%;
     max-width: 1920px;
 }
-a, a:visited, a:link, a:hover{
-    text-decoration: none;
-    color: black;
-    margin: 6px;
-    padding: 6px 6px 4px 6px;
-    font-size: 18px;
-    height: 32px;
-    background-color: white;
-    cursor: pointer;
-    border: 1px solid rgb(224, 224, 224);
-    text-align: center;
-}
+
 img{
     max-width: 100%;
     height: auto;
