@@ -24,8 +24,8 @@
     text-decoration: none;
     color: rgb(35, 35, 35);
     margin: 2px;
-    padding: 6px 6px 2px 6px;
-    font-size: 22px;
+    padding: 7px 7px 5px 7px;
+    font-size: 24px;
     background-color: white;
     cursor: pointer;
     border: 1px solid rgb(224, 224, 224);
@@ -38,7 +38,7 @@
 @media screen and (max-width: 780px){
     .container--footer{
         background-color: rgb(245, 245, 245);
-        flex-direction: column !important;
+        flex-direction: column;
         padding-bottom: 5vh;   
         padding-top: 2vh;
     }
@@ -51,12 +51,12 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 55% !important;
-        line-height: 1.5em !important;
+        font-size: 55%;
+        line-height: 1.5em;
     }
     
     .footer__a, .footer__a:visited, .footer__a:link, .footer__a:hover{ 
-        padding: 0.4vh !important;
+        padding: 0.4vh;
         font-size: 1.8vh;
         height: 2.8vh;
         }
