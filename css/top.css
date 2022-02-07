@@ -1,18 +1,91 @@
 .top{
     height: 190px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 .container--top{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+.top__button{
+    display: flex;
+    justify-content: flex-end;
+    width: 375px;
+}
+.top__button button{
+    border: 1px solid rgb(221, 221, 221);
+    background-color: white;
+    font-family: "montserratlight";
+    font-weight: bold;
+    padding: 12px 0px 8px 10px;
+    display: flex;
     justify-content: space-evenly;
+    width: 135px;
 }
 
-@media screen and (max-width: 1920px){
-    .top{
-        height: 15vh;
-    }
+.top__button i{
+    padding-top: 1px;
+    font-size: 15px;
+}
+
+.top__menu{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.top__menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 0% 8% 0% 8%;
+}
+
+.top__menu li{
+    list-style: none;
+    padding: 24px;
+}
+
+.top__menu a:hover{
+    border-top: 1px solid black;
+}
+
+.top__menu a:focus{
+    border-top: 1px solid black;
+}
+
+.top__menu a{
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    padding: 24px;
+}
+
+.top__list span{
+    font-family: "montserratregular";
+}
+
+.top__search{
+    display: flex;
+    border-bottom: 0.5px solid rgb(221, 221, 221);
+    width: 375px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.top__search input{
+    border: none;
+    outline: 0;
+}
+
+.top__search i{
+    font-size: 20px;
+    font-weight: bold;
 }
 @media screen and (max-width: 755px){
     .top{
