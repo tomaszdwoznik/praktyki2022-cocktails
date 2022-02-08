@@ -35,6 +35,10 @@
     padding: 10px 5px 5px 5px;
 }
 
+.icon--facebook{
+    font-size: 22px;
+}
+
 @media screen and (max-width: 780px){
     .container--footer{
         background-color: rgb(245, 245, 245);
