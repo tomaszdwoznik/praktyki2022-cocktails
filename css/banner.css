@@ -1,6 +1,8 @@
 @media screen and (max-width: 480px){
     .banner{
+        height: auto;
         max-height: 100px;
+        padding-top: 0px;
     }
     .banner__image{
         object-fit: cover;

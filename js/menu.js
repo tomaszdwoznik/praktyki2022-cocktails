@@ -1,9 +1,9 @@
-$(document).ready(function(){
-
-    $(".top__burger").on("click", function(){
-        
-        $(".container--list").toggleClass("open");
-        $(".top__menu ul").toggleClass("open");
-    });
-
-});
+function hamburgerMenu(){
+    var width = document.getElementById("top__burger--height")
+    if(width.className == "container--list"){
+        width.className = "container--list.open";
+    }
+    else{
+        width.className = "container--list"
+    }
+}
