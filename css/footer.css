@@ -64,7 +64,9 @@
         font-size: 1.8vh;
         height: 2.8vh;
         }
-
+    .icon--facebook{
+        font-size: 1.8vh;
+    }
     .footer__socialmedia{
         padding: 0px 5px 5px 5px;
         }
