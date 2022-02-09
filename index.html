@@ -16,7 +16,13 @@
                         <div class="container--top">
                             <div class="top--symmetry--side">
 								<span class="top__search">
-									<label><input type="text" placeholder="" autocomplete="off">&nbsp;<i class="icon-search"></i></label>
+									<label>
+                                        <img onclick="hamburgerMenu();" class="icon--burger" src="images/burger.png">&nbsp;
+                                    </label>
+                                    <label class="top__search__label">
+                                        <i class="icon-search"></i>
+                                        <input type="text" placeholder="Wpisz szukaną frazę..." autocomplete="off">
+                                    </label>
 								</span>
                             </div>
                             <div class="top--symmetry--center">
@@ -24,44 +30,47 @@
 							</div>
                             <div class="top__button top--symmetry--side">
                                 <span>
+                                    <label class="label"><i onclick="search();" class="icon-search icon--search--mobile"></i></label>
                                     <button><div class="button__text">ULUBIONE</div>&nbsp;<i class="icon-heart"></i></button>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <a class="top__burger" onclick="hamburgerMenu();"></a>  
-                    <div class="container--list" id="top__burger--height">
+                    <a class="top__burger" style="height: 0px">
+                        <label class="label"><input class="top__burger__input" type="text" style="height: 0px" placeholder="Wpisz szukaną frazę..." autocomplete="off"></label>
+                    </a>  
+                    <div tabindex="-1" style="height: 0px" class="container--list">
                         <div class="container">
                             <nav class="top__menu">             
                                 <ul>
                                     <li class="top__list">
-                                        <a href="#">
-                                            <span>KOKTAJLE MLECZNE</span>
-                                        </a>
+                                            <a href="#">
+                                                <span>KOKTAJLE MLECZNE</span>
+                                            </a>
                                     </li>
-                    
+                        
                                     <li class="top__list">
-                                        <a href="#">
-                                            <span>DRINKI</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="top__list">
-                                        <a href="#">
-                                            <span>SZOTY</span>
-                                        </a>
+                                            <a href="#">
+                                                <span>DRINKI</span>
+                                            </a>
                                     </li>
 
                                     <li class="top__list">
-                                        <a href="#">
-                                            <span>Z KAWĄ I HERBATĄ</span>
-                                        </a>
+                                            <a href="#">
+                                                <span>SZOTY</span>
+                                            </a>
                                     </li>
 
                                     <li class="top__list">
-                                        <a href="#">
-                                            <span>POZOSTAŁE KOKTAJLE</span>
-                                        </a>
+                                            <a href="#">
+                                                <span>Z KAWĄ I HERBATĄ</span>
+                                            </a>
+                                    </li>
+
+                                    <li class="top__list">
+                                            <a href="#">
+                                                <span>POZOSTAŁE KOKTAJLE</span>
+                                            </a>
                                     </li>
                                 </ul>
                             </nav>

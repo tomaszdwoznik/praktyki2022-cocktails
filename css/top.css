@@ -1,3 +1,7 @@
+::placeholder{
+    color: grey;
+    text-align: left;
+}
 .top{
     height: 160px;
     padding: 0%;
@@ -18,7 +22,7 @@
     background-color: white;
     font-family: "montserratlight";
     font-weight: bold;
-    padding: 12px 0px 8px 10px;
+    padding: 12px 5px 8px 10px;
     display: flex;
     justify-content: space-evenly;
     width: 135px;
@@ -57,16 +61,32 @@
 .top__list span{
     font-family: "montserratregular";
 }
+.top__search label{
+    display: flex;
+}
 .top__search{
     display: flex;
     width: 375px;
-    justify-content: space-between;
-    padding: 10px;
+    align-items: center;
 }
-.top__search input{
+.top__search label input{
     border: none;
+    border-bottom: 0px solid rgb(221, 221, 221);
     outline: 0;
+    width: 0px;
+    height: 30px;
+    padding: 10px;
+    transition: width 1s ease-in-out;
 }
+.top__search__label{
+    display: flex;
+    gap: 10px;
+}
+.top__search__label input:focus{
+    border-bottom: 1px solid rgb(221, 221, 221);
+    width: 300px;
+}
+
 .top__search i{
     font-size: 20px;
     font-weight: bold;
@@ -74,13 +94,21 @@
 .top--symmetry--side{
     width: 30%;
 }
+
 .top--symmetry--center{
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 .icon-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+}
+.icon--search--mobile{
+    cursor: pointer;
+    font-size: px;
 }
 .top__image{
     height: 60px;
@@ -88,65 +116,79 @@
     justify-content: center;
     background-size: contain;
 }
-
+.top__button i:nth-child(1){
+    font-size: 0px;
+}
+.top__button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top__button span label{
+    padding-right: 50%;
+}
+.top__burger input{
+    height: 0px;
+    background-color: grey;
+    border: none;
+    outline: 0;
+    width: 250px;
+    transition-property: height;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+    transition-delay: 180ms;
+}
+.top__burger label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon--burger{
+    width: 0px;
+    height: 0px;
+    cursor: pointer;
+}
 @media screen and (max-width: 768px){
+    ::placeholder{
+        color: white;
+        text-align: center;
+    }
+    .top__search__label{
+        gap: 0px;
+        width: 0px;
+    }
+    .top__search__label i{
+        height: 0px;
+        width: 0px;
+        font-size: 0px;
+    }
+    .icon--burger{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .top__burger input{
+        height: 30px;
+    }
+    .top__burger:focus{
+        width: 80%
+    }
     .top{
         height: auto;
     }
+    .top__image{
+        height: 60px;
+        width: auto;
+    }
     .container--top{
-        height: 120px;
-        justify-content: none;
-        flex-direction: row;
-    }
-    .container--top :nth-child(1){
-        order: 3;
-    }
-    .container--top :nth-child(2){
-        order: 1;
-    }
-    .container--top :nth-child(3){
-        order: 2;
-    }
-    .top--symmetry--side{
-        width: 40px;
+        height: 100px;
     }
     .top--symmetry--center{
-        width: 40%;
+        width: 60%;
         display: flex;
         justify-content: center;
     }
     .top--symmetry--side span{
-        width: 40px;
-    }
-    .top__search{
-        width: 20px;
-        justify-content: space-around;
-    }
-    .top__search label{
-        display: flex;
-        align-items: center;
-    }
-    .top__search label i{
-        padding-left: 5px;
-    }
-    .top__search label :nth-child(1){
-        order: 1;
-    }
-    .top__search label :nth-child(2){
-        order: 2;
-    }
-    .top__search input{
-        width: 30px;
-        height: 30px;
-        padding: 10px;
-        transition: width 1s ease-in-out;
-
-    }
-    .top__search input:focus{
-        border: 0.5px solid rgb(221, 221, 221);
-        width: 200px;
-    }
-    .top__button{
         width: 40px;
     }
     .top__button button{
@@ -156,32 +198,37 @@
         align-items: center;
         padding: 0px 0px 0px 0px;
     }
-    .top__button i{
-        font-size: 30px;
+    .top__button span{
+        justify-content: flex-end;
+    }
+    .top__button i:nth-child(1){
+        font-size: 25px;
+        padding-right: 50%;
+    }
+    .top__button i:nth-child(2){
+        font-size: 25px;
     }
     .button__text{
         font-size: 0px;
     }
-    .container--top{
-        padding-bottom: 10px;
-    }
     .top__burger{
-        display: block;
-        height: 40px;
+        display: flex;
+        height: 0px;
         width: 100%;
-        background: url(../images/burger.png) no-repeat 98% center;
         background-color: grey;
-        cursor: pointer;
         padding-bottom: 0px;
+        justify-content: center;
+        align-items: center;
+        transition-property: height;
+        transition-duration: 1s;
     }
     .container--list{
+        border-top: none;
+        height: 0px;
         overflow-y: hidden;
         background-color: lightgrey;
-        max-height: 0px;
-        transition: height 1s ease-in-out;
-    }
-    .container--list.open{
-        max-height: 200px;
+        transition-property: height;
+        transition-duration: 1s;
     }
     .top__menu{
         height: 200px;
@@ -193,7 +240,6 @@
         padding: 10px 0px 10px 0px;
     }
     .top__menu ul{
-        justify-content: none;
         flex-direction: column;
         height: auto; 
         align-items: center;
@@ -209,19 +255,57 @@
         border-bottom: 1px solid black;
     }
 }
+@media screen and (max-width: 1150px){
+    .top__search__label input:focus{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .top__search__label input:focus{
+        width: 175px;
+    }
+}
 @media screen and (max-width: 850px){
+    .top__search__label input:focus{
+        width: 160px;
+    }
     .top__menu a{
         font-size: 15px;
     }
 }
-@media screen and (max-width: 1150px){
-    .top__search{
-        width: 300px;
+@media screen and (max-width: 500px){
+    .top__button i:nth-child(1){
+        font-size: 20px;
+    }
+    .top__button i:nth-child(2){
+        font-size: 20px;
+    }
+    .icon--burger{
+        height: 20px;
+        width: 20px;
+    }
+    .top__button span label{
+        padding-right: 20%;
+    }
+    .top__image{
+        height: 50px;
     }
 }
-
-@media screen and (max-width: 1000px){
-    .top__search{
-        width: 225px;
+@media screen and (max-width: 420px){
+    .top__button i:nth-child(1){
+        font-size: 15px;
+    }
+    .top__button i:nth-child(2){
+        font-size: 15px;
+    }
+    .icon--burger{
+        height: 15px;
+        width: 15px;
+    }
+    .top__button span label{
+        padding-right: 20%;
+    }
+    .top__image{
+        height: 45px;
     }
 }
