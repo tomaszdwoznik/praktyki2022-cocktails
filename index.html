@@ -84,6 +84,32 @@
             <link rel="stylesheet" href="css/cocktail-list.css">
                 <div class="cocktail-list">
                     <div class="container">
+                        <script>
+                            fetch('https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Coffee%20and%20Tea')
+                                .then(res => res.json())
+                                .then(data => {
+                                    var i = 0;
+                                    var output = "";
+                                    for(i; i < data.length; i++){
+                                        output += "<li>" + data[i].drinkName + "</li>";
+                                    }
+                                    document.getElementById("kupa").innerHTML = output;
+                                }
+                                )
+                            
+                        </script>
+                        <div>
+                            <ul id='kupa'>
+                            </ul>
+                        </div>
+
+                        <!-- <template id="cocktail--template">
+                            <div class="cocktail--item">
+                                <img src="" alt="" class="cocktail__img">
+                                <h4 class="post__title"></h4>
+                                <p class="post__body"></p>
+                            </div>
+                        </template> -->
                     </div>
                 </div>
             <link rel="stylesheet" href="css/footer.css">
