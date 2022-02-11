@@ -26,7 +26,7 @@
 								</span>
                             </div>
                             <div class="top--symmetry--center">
-                               <a href="index.html"><img class="top__image" src="images/logo.png"></a>
+                               <a href="#" onclick="alcoholFree();"><img class="top__image" src="images/logo.png"></a>
 							</div>
                             <div class="top__button top--symmetry--side">
                                 <span>
@@ -63,7 +63,7 @@
 
                                     <li class="top__list">
                                             <a href="#">
-                                                <span>Z KAWĄ I HERBATĄ</span>
+                                                <span >Z KAWĄ I HERBATĄ</span>
                                             </a>
                                     </li>
 
@@ -82,35 +82,24 @@
                     <img class="banner__image" alt="banner" src="images/banner.png">
                 </div>
             <link rel="stylesheet" href="css/cocktail-list.css">
-
+            
                 <div class="cocktail--list">
                     <div class ="container">
                         <div class="container--main">
                             <h1 class="main--text">Na co masz<br> dzisiaj ochotę?</h1>
-                                 <label class="mainlabel"><h4 class="sort">Sortuj <img class="az" src="images/AZ1.png"></h4></label>                                           
+                                 <label class="mainlabel"><h4 class="sort">SORTUJ <img class="az" src="images/AZ1.png"></h4></label>                                           
                         </div><hr>
                         <div id="apicock" class="api--cocktails">
-                            <script>
-                                fetch('https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Coffee%20and%20Tea')
-                                .then(res => res.json())
-                                .then(data => {
-                                    let i = 0;
-                                    var outputImg = "";
-                                    var outputName = "";
-                                    var outputDes = "";
-                                    for(i; i < data.length; i++){
-                                        outputName += data[i].drinkName ;
-                                        outputImg +=  "<img src=" + data[i].drinkThumb + ">" ;
-                                        outputDes += data[i].drinkGlass ;
-                                    }
-                                     document.getElementById("drinkRequest").innerHTML =  outputImg + outputName + outputDes;
-                                     })  
-                                 .catch (error => console.log('error'));                              
-                            </script>
-                            <div class="drinksLayout">
-                                <div id="drinkRequest" class="drinksImages">  
-                                </div>
-                                              
+                            <div id="posts">
+                                <template id="post-template">
+                                    <div class="post">
+                                        <img src="" alt="cocktail--image" class="post__img">
+                                        <p class="post__title"></p>
+                                        <p class="post__body"></p>
+                                    </div>
+                                </template>  
+                <script src="js/alcoholfree.js"></script>
+                                     
                             </div>
                         </div>
 
