@@ -1,12 +1,13 @@
 .cocktail--list{
-    height: 2350px;
+    height: auto;
 }
 .main--text{
     font-family: "montserratlight";
-    font-size: 6vw;
+    font-size: 4vw;
+    display: flex;
 }
 .container--main{
-    padding-top:20px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
@@ -14,17 +15,35 @@
 }
 .sort{
     display: flex;
-    align-items:center;
+    align-items: center;
     font-family: "montserratlight";   
 }
-    .drinksLayout{
+#posts{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.drinksImages{
+.post__img{
     height: 250px;
     width: 250px;
+    padding: 1vw;
 }
 .mainlabel{
     cursor: pointer;
+}
+.post__title{
+    text-align: center;
+    font-family: "montserratlight";
+    color: grey;
+    text-transform: uppercase;
+    font-size: 0.7vw;
+    padding-bottom: 0.4vh;
+    font-weight: bold;
+}
+.post__body{
+    text-align: center;
+    font-family: "montserratlight";
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
 }
