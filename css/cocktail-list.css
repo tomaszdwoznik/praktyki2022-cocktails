@@ -1,3 +1,30 @@
-.cocktail-list{
+.cocktail--list{
     height: 2350px;
+}
+.main--text{
+    font-family: "montserratlight";
+    font-size: 6vw;
+}
+.container--main{
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.sort{
+    display: flex;
+    align-items:center;
+    font-family: "montserratlight";   
+}
+    .drinksLayout{
+    display: flex;
+    flex-wrap: wrap;
+}
+.drinksImages{
+    height: 250px;
+    width: 250px;
+}
+.mainlabel{
+    cursor: pointer;
 }
