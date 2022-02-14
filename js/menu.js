@@ -20,8 +20,10 @@ function search(){
 
     if(text.style.height == "0px"){
         text.style.height = "25px";
+        text.placeholder = "Wpisz szukaną frazę...";
     }
     else{
+        text.placeholder = "";
         text.style.height = "0px";
     }
 }
