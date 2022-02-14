@@ -31,6 +31,10 @@
     border: 1px solid rgb(224, 224, 224);
 }
 
+.icon--facebook:hover, .icon-sm-inst:hover, .icon-twitter:hover{
+    font-weight: bold;
+}
+
 .footer__socialmedia{
     padding: 10px 5px 5px 5px;
 }

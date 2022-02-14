@@ -9,12 +9,12 @@
         <script src="js/menu.js"></script>
         <title>Make Cocktails At Home</title>
     </head>
-    <body>
+    <body onload="alcoholFree();">
             <link rel="stylesheet" href="css/top.css">
                 <header class="top">
                     <div class="container"> 
                         <div class="container--top">
-                            <div class="top--symmetry--side">
+                            <div class="container--top--side">
 								<span class="top__search">
 									<label>
                                         <img onclick="hamburgerMenu();" class="icon--burger" src="images/burger.png">&nbsp;
@@ -25,49 +25,49 @@
                                     </label>
 								</span>
                             </div>
-                            <div class="top--symmetry--center">
+                            <div class="container--top--center">
                                <a href="#" onclick="alcoholFree();"><img class="top__image" src="images/logo.png"></a>
 							</div>
-                            <div class="top__button top--symmetry--side">
+                            <div class="top__button container--top--side">
                                 <span>
-                                    <label class="label"><i onclick="search();" class="icon-search icon--search--mobile"></i></label>
-                                    <button><div class="button__text">ULUBIONE</div>&nbsp;<i class="icon-heart"></i></button>
+                                    <label class="label"><i onclick="search();" class="icon-search"></i></label>
+                                    <button><div>ULUBIONE&nbsp;</div><i class="icon-heart"></i></button>
                                 </span>
                             </div>
                         </div>
                     </div>
                     <a class="top__burger" style="height: 0px">
-                        <label class="label"><input class="top__burger__input" type="text" style="height: 0px" placeholder="Wpisz szukaną frazę..." autocomplete="off"></label>
+                        <label class="label"><input class="top__burger__search" type="text" style="height: 0px" placeholder="Wpisz szukaną frazę..." autocomplete="off"></label>
                     </a>  
                     <div tabindex="-1" style="height: 0px" class="container--list">
                         <div class="container">
                             <nav class="top__menu">             
                                 <ul>
-                                    <li class="top__list">
+                                    <li class="top__menu__list">
                                             <a href="#">
                                                 <span>KOKTAJLE MLECZNE</span>
                                             </a>
                                     </li>
                         
-                                    <li class="top__list">
+                                    <li class="top__menu__list">
                                             <a href="#">
                                                 <span>DRINKI</span>
                                             </a>
                                     </li>
 
-                                    <li class="top__list">
+                                    <li class="top__menu__list">
                                             <a href="#">
                                                 <span>SZOTY</span>
                                             </a>
                                     </li>
 
-                                    <li class="top__list">
+                                    <li class="top__menu__list">
                                             <a href="#">
                                                 <span >Z KAWĄ I HERBATĄ</span>
                                             </a>
                                     </li>
 
-                                    <li class="top__list">
+                                    <li class="top__menu__list">
                                             <a href="#">
                                                 <span>POZOSTAŁE KOKTAJLE</span>
                                             </a>
@@ -82,7 +82,6 @@
                     <img class="banner__image" alt="banner" src="images/banner.png">
                 </div>
             <link rel="stylesheet" href="css/cocktail-list.css">
-            
                 <div class="cocktail--list">
                     <div class ="container">
                         <div class="container--main">
@@ -99,7 +98,6 @@
                                     </div>
                                 </template>  
                 <script src="js/alcoholfree.js"></script>
-                                     
                             </div>
                         </div>
 

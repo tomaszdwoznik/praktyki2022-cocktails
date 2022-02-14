@@ -1,7 +1,7 @@
 function hamburgerMenu(){
     var container = document.getElementsByClassName("container--list")[0];
     if(container.style.height == "0px"){
-        container.style.height = "200px";
+        container.style.height = "300px";
     }
     else{
         container.style.height = "0px";
@@ -10,7 +10,7 @@ function hamburgerMenu(){
 
 function search(){
     var list = document.getElementsByClassName("top__burger")[0];
-    var text = document.getElementsByClassName("top__burger__input")[0];
+    var text = document.getElementsByClassName("top__burger__search")[0];
     if(list.style.height == "0px"){
         list.style.height = "40px";
     }

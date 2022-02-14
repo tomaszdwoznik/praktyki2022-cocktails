@@ -2,6 +2,9 @@
     color: grey;
     text-align: left;
 }
+.top__button i:nth-child(1){
+    font-size: 34px;
+}
 .top{
     height: 160px;
     padding: 0%;
@@ -22,10 +25,16 @@
     background-color: white;
     font-family: "montserratlight";
     font-weight: bold;
-    padding: 12px 5px 8px 10px;
+    padding: 10px 10px 6px 20px;
     display: flex;
-    justify-content: space-evenly;
-    width: 135px;
+    justify-content: space-between;
+    gap: 7px;
+    width: 130px;
+    align-content: center;
+    cursor: pointer;
+}
+.top__button button:hover{
+    padding: 8px 8px 6px 18px;
 }
 .top__menu{
     height: 60px;
@@ -56,9 +65,10 @@
     font-size: 16px;
     cursor: pointer;
     color: black;
-    padding-top: 22px;
+    padding: 22px;
 }
-.top__list span{
+
+.top__menu__list span{
     font-family: "montserratregular";
 }
 .top__search label{
@@ -91,11 +101,11 @@
     font-size: 20px;
     font-weight: bold;
 }
-.top--symmetry--side{
+.container--top--side{
     width: 30%;
 }
 
-.top--symmetry--center{
+.container--top--center{
     width: 40%;
     display: flex;
     justify-content: center; 
@@ -105,10 +115,6 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.icon--search--mobile{
-    cursor: pointer;
-    font-size: px;
 }
 .top__image{
     height: 60px;
@@ -127,7 +133,7 @@
 .top__button span label{
     padding-right: 50%;
 }
-.top__burger input{
+.top__burger__search{
     height: 0px;
     background-color: grey;
     border: none;
@@ -153,6 +159,9 @@
         color: white;
         text-align: center;
     }
+    .top__button button:hover{
+        padding: 0px;
+    }
     .top__search__label{
         gap: 0px;
         width: 0px;
@@ -163,11 +172,11 @@
         font-size: 0px;
     }
     .icon--burger{
-        width: 25px;
-        height: 25px;
+        width: 34px;
+        height: 34px;
         cursor: pointer;
     }
-    .top__burger input{
+    .top__burger__search{
         height: 30px;
     }
     .top__burger:focus{
@@ -183,12 +192,12 @@
     .container--top{
         height: 100px;
     }
-    .top--symmetry--center{
+    .container--top--center{
         width: 60%;
         display: flex;
         justify-content: center;
     }
-    .top--symmetry--side span{
+    .container--top--side span{
         width: 40px;
     }
     .top__button button{
@@ -197,19 +206,17 @@
         height: 30px;
         align-items: center;
         padding: 0px 0px 0px 0px;
+        font-size: 0px;
     }
     .top__button span{
         justify-content: flex-end;
     }
     .top__button i:nth-child(1){
-        font-size: 25px;
+        font-size: 34px;
         padding-right: 50%;
     }
     .top__button i:nth-child(2){
-        font-size: 25px;
-    }
-    .button__text{
-        font-size: 0px;
+        font-size: 34px;
     }
     .top__burger{
         display: flex;
@@ -231,9 +238,12 @@
         transition-duration: 1s;
     }
     .top__menu{
-        height: 200px;
+        height: 300px;
     }
-    .top__list a{
+    .top__menu a{
+        padding: none;
+    }
+    .top__menu__list a{
         display: flex;
         column-gap: 10px;
         align-items: center;
@@ -264,48 +274,38 @@
     .top__search__label input:focus{
         width: 175px;
     }
+    .top__menu__list a{
+        font-size: 1.6vw;
+    }
+    .top__menu a{
+        padding: 22px 16px 22px 16px;
+    }
 }
 @media screen and (max-width: 850px){
     .top__search__label input:focus{
         width: 160px;
     }
+    .top__menu__list a{
+        font-size: 1.7vw;
+    }
     .top__menu a{
-        font-size: 15px;
+        padding: 22px 12px 22px 12px;
     }
 }
 @media screen and (max-width: 500px){
-    .top__button i:nth-child(1){
-        font-size: 20px;
-    }
-    .top__button i:nth-child(2){
-        font-size: 20px;
-    }
-    .icon--burger{
-        height: 20px;
-        width: 20px;
-    }
     .top__button span label{
-        padding-right: 20%;
-    }
-    .top__image{
-        height: 50px;
+        padding-right: 10%;
     }
 }
 @media screen and (max-width: 420px){
-    .top__button i:nth-child(1){
-        font-size: 15px;
-    }
-    .top__button i:nth-child(2){
-        font-size: 15px;
-    }
-    .icon--burger{
-        height: 15px;
-        width: 15px;
-    }
     .top__button span label{
-        padding-right: 20%;
+        padding-right: 0%;
+    }
+    .top__button button{
+        gap: 0px;
     }
     .top__image{
-        height: 45px;
+        height: auto;
+        width: 35vw;
     }
 }
