@@ -23,7 +23,7 @@ function search(){
         text.placeholder = "Wpisz szukaną frazę...";
     }
     else{
-        text.placeholder = "";
         text.style.height = "0px";
+        text.placeholder = "";
     }
 }

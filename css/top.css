@@ -5,6 +5,10 @@
 .top__button i:nth-child(1){
     font-size: 34px;
 }
+.icon-heart{
+    text-decoration: none;
+    color: rgb(35, 35, 35);
+}
 .top{
     height: 160px;
     padding: 0%;
@@ -70,7 +74,7 @@
 .top__menu__list span{
     font-family: "montserratregular";
 }
-.top__search label{
+.top__search__label{
     display: flex;
 }
 .top__search{
@@ -78,7 +82,7 @@
     width: 375px;
     align-items: center;
 }
-.top__search label input{
+.top__search__label input{
     border: none;
     border-bottom: 0px solid rgb(221, 221, 221);
     outline: 0;
@@ -157,6 +161,10 @@
     ::placeholder{
         color: white;
         text-align: center;
+    }
+    .top__search__label input{
+        height: 0px;
+        padding: 0px;
     }
     .top__menu__list span{
         font-size: 12px;
