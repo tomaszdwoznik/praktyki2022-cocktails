@@ -67,7 +67,6 @@
     color: black;
     padding: 22px;
 }
-
 .top__menu__list span{
     font-family: "montserratregular";
 }
@@ -158,6 +157,9 @@
     ::placeholder{
         color: white;
         text-align: center;
+    }
+    .top__menu__list span{
+        font-size: 12px;
     }
     .top__button button:hover{
         padding: 0px;
@@ -253,7 +255,7 @@
         flex-direction: column;
         height: auto; 
         align-items: center;
-        padding: 7px 0px 7px 0px;
+        max-height: 300px;
     }
     .top__menu a:focus{
         border-top: none;
