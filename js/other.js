@@ -1,5 +1,5 @@
-    async function alcoholFree(){
-    const postStream = await fetch('https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false');
+    async function other(){
+    const postStream = await fetch('https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Other');
     const posts = await postStream.json();
     let i = 0;
     let p = 1;
@@ -31,6 +31,4 @@
             }
         })
         .catch(err => console.error(err));
-        console.log(postContent.children);  
-    }   
-  
+    }     

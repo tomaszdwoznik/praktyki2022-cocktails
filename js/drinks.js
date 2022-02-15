@@ -1,5 +1,5 @@
-    async function alcoholFree(){
-    const postStream = await fetch('https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false');
+    async function drinks(){
+    const postStream = await fetch('https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Ordinary%20Drinks');
     const posts = await postStream.json();
     let i = 0;
     let p = 1;
@@ -17,7 +17,7 @@
             const title = posts[i].drinkName;
             const body = posts[i].drinkGlass;
             const image = posts[i].drinkThumb;
-    
+
             const newPost = document.importNode(postTemplate.content, true);
             const postTitle = newPost.querySelector(".post__title");
             const postBody = newPost.querySelector(".post__body");
@@ -31,6 +31,4 @@
             }
         })
         .catch(err => console.error(err));
-        console.log(postContent.children);  
-    }   
-  
+    }     

@@ -24,9 +24,9 @@
     justify-content: space-between;
 }
 .post__img{
-    height: 250px;
-    width: 250px;
-    padding: 1vw;
+    height: 370px;
+    width: 370px;
+    padding: 0.5vw;
 }
 .mainlabel{
     cursor: pointer;
@@ -36,8 +36,8 @@
     font-family: "montserratlight";
     color: grey;
     text-transform: uppercase;
-    font-size: 0.7vw;
-    padding-bottom: 0.4vh;
+    font-size: 0.8vw;
+    padding-bottom: 1vh;
     font-weight: bold;
 }
 .post__body{
@@ -46,4 +46,12 @@
     font-size: 1vw;
     text-transform: uppercase;
     font-weight: bold;
+    padding-bottom: 7vh;
+}
+
+@media screen and (max-width: 1650px){
+    .post__img{
+        width: 25vw;
+        height: 25vw;
+    }
 }
