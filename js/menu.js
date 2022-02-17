@@ -8,7 +8,7 @@ function hamburgerMenu(){
     }
 }
 
-function search(){
+function searchIcon(){
     var list = document.getElementsByClassName("top__burger")[0];
     var text = document.getElementsByClassName("top__burger__search")[0];
     if(list.style.height == "0px"){

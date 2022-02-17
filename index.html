@@ -13,6 +13,8 @@
         <script src="js/coffeetea.js"></script>
         <script src="js/other.js"></script>
         <script src="js/alcoholfree.js"></script>
+        
+        
         <title>Make Cocktails At Home</title>
     </head>
     <body onload="alcoholFree();">
@@ -27,7 +29,8 @@
                                     </label>
                                     <label class="top__search__label">
                                         <i class="icon-search"></i>
-                                        <input type="text" placeholder="Wpisz szukaną frazę..." autocomplete="off">
+                                        <input type="text" id="search__bar__desktop" onclick="search();" placeholder="Wpisz szukaną frazę..." autocomplete="off">
+                                        <script src="js/searchdesktop.js"></script>
                                     </label>
 								</span>
                             </div>
@@ -36,14 +39,15 @@
 							</div>
                             <div class="top__button container--top--side">
                                 <span>
-                                    <label class="label"><i onclick="search();" class="icon-search"></i></label>
-                                    <button><div>ULUBIONE&nbsp;</div><i class="icon-heart"></i></button>
+                                    <label class="label"><i onclick="searchIcon();" class="icon-search"></i></label>
+                                    <label class="label"><button><div>ULUBIONE&nbsp;</div><i class="icon-heart"></i></button></label>
                                 </span>
                             </div>
                         </div>
                     </div>
                     <a class="top__burger" style="height: 0px">
-                        <label class="label"><input class="top__burger__search" type="text" style="height: 0px" autocomplete="off"></label>
+                        <label class="label"><input id="search__bar__mobile" class="top__burger__search" type="text" style="height: 0px" autocomplete="off"></label>
+                        <script src="js/searchmobile.js"></script>
                     </a>  
                     <div tabindex="-1" style="height: 0px" class="container--list">
                         <div class="container">
@@ -91,7 +95,7 @@
                 <div class="cocktail--list">
                     <div class ="container">
                         <div class="container--main">
-                            <h1 class="main--text">Na co masz<br> dzisiaj ochotę?</h1>
+                            <h1 class="main--text">Na co masz dzisiaj ochotę?</h1>
                                  <label class="mainlabel"><h4 class="sort">SORTUJ <img class="az" src="images/AZ1.png"></h4></label>                                           
                         </div><hr>
                         <div id="apicock" class="api--cocktails">

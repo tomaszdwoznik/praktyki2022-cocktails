@@ -20,19 +20,21 @@
     align-content: center;
 }
 
-.footer__a, .footer__a:visited, .footer__a:link, .footer__a:hover{
+.footer__a, .footer__a:visited, .footer__a:link{
     text-decoration: none;
     color: rgb(35, 35, 35);
     margin: 2px;
-    padding: 7px 7px 2px 7px;
-    font-size: 24px;
+    padding: 6px 6px 1px 6px;
+    font-size: 20px;
     background-color: white;
     cursor: pointer;
     border: 1px solid rgb(224, 224, 224);
+
 }
 
-.icon--facebook:hover, .icon-sm-inst:hover, .icon-twitter:hover{
-    font-weight: bold;
+.footer__a:hover{
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
 }
 
 .footer__socialmedia{
@@ -51,7 +53,8 @@
     }
     .footer__socialmedia{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10px;
         padding: 0px 5px 15px 5px;
         width: 250px;
     }

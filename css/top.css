@@ -29,16 +29,23 @@
     background-color: white;
     font-family: "montserratlight";
     font-weight: bold;
-    padding: 10px 10px 6px 20px;
+    font-size: 1.3vh;
+    padding: 10px 15px 8px 25px;
     display: flex;
-    justify-content: space-between;
     gap: 7px;
-    width: 130px;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
     cursor: pointer;
+
 }
 .top__button button:hover{
-    padding: 8px 8px 6px 18px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black; 
+}
+.top__button button:focus{
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
 }
 .top__menu{
     height: 60px;
@@ -98,10 +105,19 @@
     border-bottom: 1px solid rgb(221, 221, 221);
     width: 300px;
 }
-
+.top__button span{
+    display: flex;
+}
+.top__search__label{
+    width: 0px;
+    gap: 10px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .top__search i{
     font-size: 20px;
-    font-weight: bold;
 }
 .container--top--side{
     width: 30%;
@@ -112,12 +128,7 @@
     display: flex;
     justify-content: center; 
 }
-.icon-search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+
 .top__image{
     height: 60px;
     width: auto;
@@ -127,14 +138,8 @@
 .top__button i:nth-child(1){
     font-size: 0px;
 }
-.top__button span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.top__button span label{
-    padding-right: 50%;
-}
+
+
 .top__burger__search{
     height: 0px;
     background-color: grey;
@@ -156,10 +161,27 @@
     height: 0px;
     cursor: pointer;
 }
+
 @media screen and (max-width: 768px){
     ::placeholder{
         color: white;
         text-align: center;
+    }
+    .label{
+        width: 34px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        flex-shrink: 0;
+        justify-content: center;
+    }
+    .top__button button:hover{
+        border: none; 
+    }
+    .top__button button:focus{
+        border: none;
     }
     .top__search__label input{
         height: 0px;
@@ -181,8 +203,8 @@
         font-size: 0px;
     }
     .icon--burger{
-        width: 34px;
-        height: 34px;
+        width: 20px;
+        height: 20px;
         cursor: pointer;
     }
     .top__burger__search{
@@ -211,21 +233,22 @@
     }
     .top__button button{
         border: none;
-        width: 30px;
-        height: 30px;
+        width: 0px;
+        height: 0px;
         align-items: center;
         padding: 0px 0px 0px 0px;
         font-size: 0px;
     }
     .top__button span{
+        display: flex;
         justify-content: flex-end;
+        gap: 10px;
     }
     .top__button i:nth-child(1){
-        font-size: 34px;
-        padding-right: 50%;
+        font-size: 20px;
     }
     .top__button i:nth-child(2){
-        font-size: 34px;
+        font-size: 20px;
     }
     .top__burger{
         display: flex;
@@ -304,6 +327,9 @@
 @media screen and (max-width: 500px){
     .top__button span label{
         padding-right: 10%;
+    }
+    .top__search__label{
+        gap: 5px;
     }
 }
 @media screen and (max-width: 420px){
