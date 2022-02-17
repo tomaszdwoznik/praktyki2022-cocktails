@@ -29,8 +29,7 @@
                                     </label>
                                     <label class="top__search__label">
                                         <i class="icon-search"></i>
-                                        <input type="text" id="search__bar__desktop" onclick="search();" placeholder="Wpisz szukaną frazę..." autocomplete="off">
-                                        <script src="js/searchdesktop.js"></script>
+                                        <input type="text" id="search__bar" placeholder="Wpisz szukaną frazę..." autocomplete="off">
                                     </label>
 								</span>
                             </div>
@@ -46,8 +45,7 @@
                         </div>
                     </div>
                     <a class="top__burger" style="height: 0px">
-                        <label class="label"><input id="search__bar__mobile" class="top__burger__search" type="text" style="height: 0px" autocomplete="off"></label>
-                        <script src="js/searchmobile.js"></script>
+                        <label class="label"><input id="search__bar" class="top__burger__search" type="text" style="height: 0px" autocomplete="off"></label>
                     </a>  
                     <div tabindex="-1" style="height: 0px" class="container--list">
                         <div class="container">
@@ -95,16 +93,17 @@
                 <div class="cocktail--list">
                     <div class ="container">
                         <div class="container--main">
-                            <h1 class="main--text">Na co masz dzisiaj ochotę?</h1>
-                                 <label class="mainlabel"><h4 class="sort">SORTUJ <img class="az" src="images/AZ1.png"></h4></label>                                           
-                        </div><hr>
+                            <div class="container--main--text"><span class="main--text"></span></div>
+                            <div class="container--main--sort"><label onclick="sortDrinks();" class="mainlabel"><h4 class="sort">SORTUJ <img class="az" src="images/AZ1.png"></h4></label></div>                                   
+                        </div>
+                        <hr>
                         <div id="apicock" class="api--cocktails">
                             <div id="posts">
                                 <template id="post-template">
                                     <div class="post">
                                         <img src="" alt="cocktail--image" class="post__img">
-                                        <p class="post__title"></p>
                                         <p class="post__body"></p>
+                                        <p class="post__title"></p>
                                     </div>
                                 </template>  
                             </div>
