@@ -32,7 +32,7 @@
 #posts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .post__img{
     height: 35vh;
@@ -71,7 +71,11 @@
 .hide{
     display: none;
 }
-
+@media screen and (max-width: 1440px){
+    #posts{
+        justify-content: space-around;
+    }
+}
 @media screen and (max-width: 768px){
     .post__img{
         height: 39vw; 
