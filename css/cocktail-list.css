@@ -2,14 +2,14 @@
     height: auto;
 }
 .main--text{
-    font-family: "montserratregular";
-    font-size: 1.7vw;
-    display: flex;
+    font-family: "montserratlight";
+    font-size: 4vh;
+    color: rgb(65, 65, 65); 
 }
 .container--main{
-    padding-top: 20px;
+    padding-top: 35px;
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
 }
@@ -23,16 +23,21 @@
     display: flex;
     align-items: center;
     font-family: "montserratlight";   
+    font-size: 10px;
+}
+.az{
+    height: 3.5vh;
+    width: 3.5vh;
 }
 #posts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .post__img{
-    height: 370px;
-    width: 370px;
-    padding: 0.5vw;
+    height: 35vh;
+    width: 35vh;
+    padding: 0.5vh;
 }
 .mainlabel{
     cursor: pointer;
@@ -43,7 +48,10 @@
     font-size: 2vh;
     text-transform: uppercase;
     font-weight: bold;
-    padding-bottom: 7vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vh, 30vh));
+    justify-content: center;
+    padding-bottom: 4vh;
 }
 .post__body{
     text-align: center;
@@ -53,14 +61,58 @@
     font-size: 1vh;
     padding-bottom: 1vh;
     font-weight: bold;
+    display: grid;
+    justify-content: center;
+    padding-top: 2vh;
+}
+.post, .api--cocktails{
+    display: grid;
 }
 .hide{
     display: none;
 }
 
-@media screen and (max-width: 1650px){
+@media screen and (max-width: 768px){
     .post__img{
-        width: 25vh;
-        height: 25vh;
+        height: 39vw; 
+        width: 39vw;
+    }
+    .container--main{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .post__title{
+        grid-template-columns: repeat(auto-fill, minmax(35vw, 35vw));
+        font-size: 1.6vh;
+    }
+    .main--text{
+        font-size: 3.5vw;
+    }
+    .sort{
+        height: 10vw;
+        width: 10vw;
+        font-size: 0vw;
+    }
+    .az{
+        height: 8vw;
+        width: 8vw;
+    }
+    .post__body{
+        padding-top: 1vh;
+    }
+}
+@media screen and (max-width: 400px){
+    .post__title{
+        grid-template-columns: repeat(auto-fill, minmax(35vw, 35vw));
+        font-size: 1.5vh;
+        padding-bottom: 2vh;
+    }
+    .main--text{
+        font-size: 4vw;
+    }
+    
+    .az{
+        height: 10vw;
+        width: 10vw;
     }
 }
