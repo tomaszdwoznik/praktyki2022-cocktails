@@ -1,33 +1,29 @@
+    const apiUrl = "https://cocktail-recipes-tully4school.herokuapp.com/drinks";
     const categoryMap = [
         {
             categoryName: "Na co masz dzisiaj ochotę?",
-            apiLinkEnd: "/has-alcohol/false",
-            apiLink: "https://cocktail-recipes-tully4school.herokuapp.com/drinks/has-alcohol/false"
+            apiLinkEnd: "/has-alcohol/false"
+
         },
         {
             categoryName: "KOKTAJLE MLECZNE",
-            apiLinkEnd: "/category/Milk",
-            apiLink: "https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Milk"
+            apiLinkEnd: "/category/Milk"
         },
         {
             categoryName: "DRINKI",
-            apiLinkEnd: "/category/Ordinary%20Drinks",
-            apiLink: "https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Ordinary%20Drinks"
+            apiLinkEnd: "/category/Ordinary%20Drinks"
         },
         {
             categoryName: "SZOTY",
-            apiLinkEnd: "/category/Shots",
-            apiLink: "https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Shots"
+            apiLinkEnd: "/category/Shots"
         },
         {
             categoryName: "Z KAWĄ I HERBATĄ",
-            apiLinkEnd: "/category/Coffee%20and%20Tea",
-            apiLink: "https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Coffee%20and%20Tea"
+            apiLinkEnd: "/category/Coffee%20and%20Tea"
         },
         {
             categoryName: "POZOSTAŁE KOKTAJLE",
-            apiLinkEnd: "/category/Other",
-            apiLink: "https://cocktail-recipes-tully4school.herokuapp.com/drinks/category/Other"
+            apiLinkEnd: "/category/Other"
         }
     ]
 
