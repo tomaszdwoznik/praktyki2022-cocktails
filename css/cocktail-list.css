@@ -3,13 +3,13 @@
 }
 .main--text{
     font-family: "montserratlight";
-    font-size: 4vh;
-    color: rgb(65, 65, 65); 
+    font-size: 4.5vh;
+    color: black; 
 }
 .container--main{
-    padding-top: 35px;
+    padding-top: 80px;
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     justify-content: center;
     align-items: center;
 }
@@ -22,8 +22,11 @@
 .sort{
     display: flex;
     align-items: center;
-    font-family: "montserratlight";   
-    font-size: 10px;
+    font-family: "montserratregular";   
+    font-size: 12px;
+    justify-content: center;
+    color: rgb(115, 115, 115);
+    gap: 5px;
 }
 .az{
     height: 3.5vh;
@@ -32,12 +35,14 @@
 #posts{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .post__img{
     height: 35vh;
     width: 35vh;
-    padding: 0.5vh;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
 }
 .mainlabel{
     cursor: pointer;
@@ -45,35 +50,52 @@
 .post__title{
     text-align: center;
     font-family: "montserratlight";
-    font-size: 2vh;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vh, 30vh));
     justify-content: center;
     padding-bottom: 4vh;
+    color: rgb(35, 35, 35);
 }
 .post__body{
     text-align: center;
     font-family: "montserratlight";
-    color: grey;
+    color: rgb(115, 115, 115);
     text-transform: uppercase;
-    font-size: 1vh;
-    padding-bottom: 1vh;
+    font-size: 14px;
+    padding-bottom: 1.2vh;
     font-weight: bold;
     display: grid;
     justify-content: center;
     padding-top: 2vh;
 }
-.post, .api--cocktails{
-    display: grid;
-}
+
 .hide{
     display: none;
 }
-@media screen and (max-width: 1440px){
-    #posts{
-        justify-content: space-around;
+.post__img{
+    height: 40vh;
+    width: 40vh;
+}
+@media screen and (max-width: 1360px) {
+    .post__img{
+        height: 27vw;
+        width: 27vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    .post__img{
+        height: 40vw;
+        width: 40vw;
+    }
+    .main--text{
+        font-size: 4.3vw;
+    }
+    .container--main{
+        padding-top: 8vw;
+        padding-bottom: 8vw;
     }
 }
 @media screen and (max-width: 768px){
@@ -82,15 +104,15 @@
         width: 39vw;
     }
     .container--main{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 0px;
     }
     .post__title{
         grid-template-columns: repeat(auto-fill, minmax(35vw, 35vw));
-        font-size: 1.6vh;
+        padding-bottom: 2vh;
     }
     .main--text{
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     .sort{
         height: 10vw;
@@ -98,25 +120,28 @@
         font-size: 0vw;
     }
     .az{
-        height: 8vw;
-        width: 8vw;
+        height: 7vw;
+        width: 7vw;
     }
     .post__body{
-        padding-top: 1vh;
+        padding-top: 0.8vh;
+        font-size: 1.9vw;
+    }
+    .post__title{
+        font-size: 2.8vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .post__body{
+        font-size: 1.1vh;
+    }   
+    .post__title{
+        font-size: 1.7vh;
     }
 }
 @media screen and (max-width: 400px){
     .post__title{
         grid-template-columns: repeat(auto-fill, minmax(35vw, 35vw));
-        font-size: 1.5vh;
         padding-bottom: 2vh;
-    }
-    .main--text{
-        font-size: 4vw;
-    }
-    
-    .az{
-        height: 10vw;
-        width: 10vw;
     }
 }
