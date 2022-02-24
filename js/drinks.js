@@ -140,5 +140,42 @@
             })  
         }    
 
-    
+        const postContent = document.getElementsByClassName("post");
+        const btnFavorite = document.querySelectorAll("label")[3];
+        if(postContent){
+            for(let y = 0; y < (postContent.length); y++){
+                const iconFavorite = postContent[y].childNodes[3];
+                const iconClassList = iconFavorite.classList;
+                iconFavorite.addEventListener('click', e =>{
+                    iconClassList.add("icon-heart");
+                    if(iconClassList.contains("icon-heart-fill")){
+                        iconFavorite.classList.remove("icon-heart-fill");
+                        iconFavorite.classList.add("icon-heart");
+                    }
+                    else{
+                        iconFavorite.classList.remove("icon-heart");
+                        iconFavorite.classList.add("icon-heart-fill");
+                    }
+                    const drinkName = iconFavorite.parentNode.childNodes[7].textContent.toLowerCase();
+                        if(localStorage.getItem("drinkName"+(y+1)) == drinkName){
+                            localStorage.removeItem("drinkName"+(y+1));
+                        }
+                        else{
+                            localStorage.setItem("drinkName"+(y+1), drinkName);
+                        }
+                    });
+                btnFavorite.addEventListener('click', e => {
+                    const drinkLocal = localStorage.getItem("drinkName"+(y+1));
+                    const drinkName = postContent[y].childNodes[7].textContent.toLowerCase();
+                    const visible = drinkName.includes(drinkLocal);
+                    if (visible == false){
+                        postContent[y].childNodes[1].classList.toggle("hide");
+                        postContent[y].childNodes[3].classList.toggle("hide");
+                        postContent[y].childNodes[5].classList.toggle("hide");
+                        postContent[y].childNodes[7].classList.toggle("hide");
+                    }
+                });
+            
+            }
+        }
 }           
