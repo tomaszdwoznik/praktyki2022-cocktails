@@ -49,10 +49,9 @@
 }
 .post__title{
     text-align: center;
-    font-family: "montserratlight";
+    font-family: "montserratregular";
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: bold;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(30vh, 30vh));
     justify-content: center;
@@ -61,17 +60,34 @@
 }
 .post__body{
     text-align: center;
-    font-family: "montserratlight";
+    font-family: "montserratregular";
     color: rgb(115, 115, 115);
     text-transform: uppercase;
     font-size: 14px;
     padding-bottom: 1.2vh;
-    font-weight: bold;
     display: grid;
     justify-content: center;
     padding-top: 2vh;
 }
 
+.post__icon{
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px 8px 8px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.1s all ease-in-out
+}
+.post:hover .post__icon{
+    opacity: 1;
+}
+
+.post{
+    position: relative;
+}
 .hide{
     display: none;
 }
@@ -100,8 +116,11 @@
 }
 @media screen and (max-width: 768px){
     .post__img{
-        height: 39vw; 
-        width: 39vw;
+        height: 42vw; 
+        width: 42vw;
+    }
+    .cocktail--list .container{
+        padding: 0% 4% 0% 4%;
     }
     .container--main{
         padding-top: 10px;
