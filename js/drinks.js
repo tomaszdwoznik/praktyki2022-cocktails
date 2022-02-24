@@ -32,16 +32,22 @@
         if(link.length){
             let apiLinkEnd = categoryMap[0].apiLinkEnd;
             let headerName = categoryMap[0].categoryName;
+            let y = 0;
             cocktails(apiLinkEnd, headerName);
             
             for(let x = 0; x < link.length; x++){
                 link[x].addEventListener('click', e => {
                     apiLinkEnd = categoryMap[x].apiLinkEnd;
                     headerName = categoryMap[x].categoryName;
+                    y = 0;
                     cocktails(apiLinkEnd, headerName);
                 })
                 }
         }
+    }
+
+    
+    
     
     async function cocktails(apiLinkEnd, headerName){
         const postStream = await fetch("https://cocktail-recipes-tully4school.herokuapp.com/drinks"+apiLinkEnd+"");
@@ -55,7 +61,8 @@
         const postLength = postSection.children.length;
         const postHeader = document.querySelector(".main--text");
         const searchInput = document.querySelectorAll("#search__bar");
-        
+    
+
         if(postLength){
             while(p < postLength){        
                 const postContent = document.querySelector(".post");
@@ -66,6 +73,7 @@
             }
         }
 
+        
         if(searchInput.length){
             for(let y = 0; y < searchInput.length; y++){
                 searchInput[y].addEventListener("input", (e) => {
@@ -73,16 +81,25 @@
                     function search(){
                         const value = e.target.value.toLowerCase();
                         const postContent = document.getElementsByClassName("post");
+                        if(value == ""){
+                            postHeader.innerHTML = headerName;
+                            console.log(headerName);
+                        }
+                        else{
+                            postHeader.innerHTML = "WYNIKI WYSZUKIWANIA";
+                        }
                         if(postContent.length){
                             const postLength = postSection.children.length;
                         for(let q = 0; q < (postLength-1); q++){
-                            const drinkName = postContent[q].childNodes[5].textContent.toLowerCase();
+                            const drinkName = postContent[q].childNodes[7].textContent.toLowerCase();
                             const visible = drinkName.includes(value);
                             postContent[q].childNodes[1].classList.toggle("hide", !visible);
                             postContent[q].childNodes[3].classList.toggle("hide", !visible);
                             postContent[q].childNodes[5].classList.toggle("hide", !visible);
+                            postContent[q].childNodes[7].classList.toggle("hide", !visible);
                             } 
                         }
+                    
                         clearTimeout(timeout);
                     }
             })
@@ -98,6 +115,8 @@
                 const postTitle = newPost.querySelector(".post__title");
                 const postBody = newPost.querySelector(".post__body");
                 const postImage = newPost.querySelector(".post__img");
+                
+                
                 if(postHeader){
                     postHeader.innerHTML = headerName;
                 }
@@ -109,6 +128,7 @@
                 }
                 if(postImage){
                     postImage.src = image;
+                    postImage.alt = title;
                 }
                 if(postTemplate){
                     postSection.appendChild(newPost);
@@ -116,7 +136,9 @@
                     return {name: element.drinkName}
                 }
                 } 
+                
             })  
-        }       
-}
-}
+        }    
+
+    
+}           
