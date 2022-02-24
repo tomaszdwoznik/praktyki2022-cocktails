@@ -56,6 +56,25 @@
         let p = 1;
         let names = [];
 
+        // przy pobieraniu koktajli z API sprawdzamy, czy w adresie URL występuje parametr odpowiadający za sortowanie
+        // nazwaliśmy go sobie sort i zakładamy, że będzie przyjmował wartości:
+        // - name_asc - sortowanie po nazwie A-Z
+        // - name_desc - sortowanie po nazwie Z-A
+        // ten parametr dokleja się do agresu url, dzięki temu, że w pliku index.html przycisk sortowania
+        // jest linkiem (<a>), który w atrybucie href zawiera ten parametr
+        const urlParams = new URLSearchParams(window.location.search);
+        // jeśli już mamy w zmiennej sortType wartość parametru sort z url (name_asc lub name_desc)
+        // to wystarczy teraz wykonać sortowanie koktalji po pobraniu ich z API
+        const sortType = urlParams.get('sort');
+
+        // nasze koktajle pobrane z API znajdują się w zmiennej posts
+        // więc tutaj wystarczy wykonać funkcję na tablicy posts, która posortuje koktalje zgodnie z wyborem
+        // użytkownika ;)
+        if (sortType) {
+            // tutaj kod który posortuje tablicę...
+        }
+
+    
         const postSection = document.querySelector("#posts");
         const postTemplate = document.querySelector("#post-template");
         const postLength = postSection.children.length;
@@ -104,7 +123,7 @@
                     }
             })
         }
-        
+
         names = posts.map(element => {
             if(i < (posts.length)){
                 const title = posts[i].drinkName;
