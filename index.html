@@ -46,31 +46,31 @@
                         <div class="container">
                             <nav class="top__menu">             
                                 <ul>
-                                    <li class="top__menu__list">
+                                    <li class="top__menu__item">
                                             <a class="link" href="#">
                                                 <span>KOKTAJLE MLECZNE</span>
                                             </a>
                                     </li>
                         
-                                    <li class="top__menu__list">
+                                    <li class="top__menu__item">
                                             <a class="link" href="#">
                                                 <span>DRINKI</span>
                                             </a>
                                     </li>
 
-                                    <li class="top__menu__list">
+                                    <li class="top__menu__item">
                                             <a class="link" href="#">
                                                 <span>SZOTY</span>
                                             </a>
                                     </li>
 
-                                    <li class="top__menu__list">
+                                    <li class="top__menu__item">
                                             <a class="link" href="#">
                                                 <span >Z KAWĄ I HERBATĄ</span>
                                             </a>
                                     </li>
 
-                                    <li class="top__menu__list">
+                                    <li class="top__menu__item">
                                             <a class="link" href="#">
                                                 <span>POZOSTAŁE KOKTAJLE</span>
                                             </a>
@@ -86,7 +86,7 @@
                 </div>
             <link rel="stylesheet" href="css/cocktail-list.css">
                 <div class="cocktail--list">
-                    <div class ="container">
+                    <div class="container">
                         <div class="container--main">
                             <div class="container--main--text"><span class="main--text"></span></div>
                             <div class="container--main--sort"><label onclick="sortDrinks();" class="mainlabel"><span class="sort">SORTUJ<img class="az" src="images/AZ1.png"></span></label></div>                                   
@@ -96,7 +96,8 @@
                             <div id="posts">
                                 <template id="post-template">
                                     <div class="post">
-                                        <img src="" alt="cocktail--image" class="post__img">
+                                            <img src="" alt="cocktail--image" class="post__img">
+                                            <i class="icon-heart post__icon"></i>
                                         <p class="post__body"></p>
                                         <p class="post__title"></p>
                                     </div>
