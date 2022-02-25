@@ -5,6 +5,9 @@
     font-family: "montserratlight";
     font-size: 4.5vh;
     color: black; 
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(50vw, 50vw));
 }
 .container--main{
     padding-top: 80px;
@@ -124,14 +127,14 @@
     }
     .container--main{
         padding-top: 10px;
-        padding-bottom: 0px;
+        padding-bottom: 10px;
     }
     .post__title{
         grid-template-columns: repeat(auto-fill, minmax(35vw, 35vw));
         padding-bottom: 2vh;
     }
     .main--text{
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .sort{
         height: 10vw;
