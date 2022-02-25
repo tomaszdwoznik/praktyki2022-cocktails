@@ -116,12 +116,10 @@
                     function search(){
                         const value = e.target.value.toLowerCase();
                         const postContent = document.getElementsByClassName("post");
+                        let visibleArray = [];
                         if(value == ""){
                             postHeader.innerHTML = headerName;
                             console.log(headerName);
-                        }
-                        else{
-                            postHeader.innerHTML = "WYNIKI WYSZUKIWANIA";
                         }
                         if(postContent.length){
                             const postLength = postSection.children.length;
@@ -132,7 +130,16 @@
                             postContent[q].childNodes[3].classList.toggle("hide", !visible);
                             postContent[q].childNodes[5].classList.toggle("hide", !visible);
                             postContent[q].childNodes[7].classList.toggle("hide", !visible);
+                            visibleArray += visible;
+                            console.log(visibleArray.includes(true))                            
                             } 
+                        if(!visibleArray.includes(true)){
+                            postHeader.innerHTML = "NIE ZNALEZIONO PASUJĄCYCH KOKTAJLI";
+                        }
+                        else if (visibleArray.includes(true)){
+                            postHeader.innerHTML = "WYNIKI WYSZUKIWANIA";
+                        }
+                            
                         }
                     
                         clearTimeout(timeout);

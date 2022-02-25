@@ -61,10 +61,10 @@
 .top__menu li{
     list-style: none;
 }
-.top__menu__item a:hover{
+.top__menu--item a:hover{
     border-top: 1px solid black;
 }
-.top__menu__item a:focus{
+.top__menu--item a:focus{
     border-top: 1px solid black;
 }
 .top__menu a{
@@ -73,10 +73,10 @@
     color: black;
     padding: 22px;
 }
-.top__menu__item span{
+.top__menu--item span{
     font-family: "montserratregular";
 }
-.top__search__label{
+.top__label{
     display: flex;
 }
 .top__search{
@@ -84,7 +84,7 @@
     width: 375px;
     align-items: center;
 }
-.top__search__label input{
+.top__label input{
     border: none;
     border-bottom: 0px solid rgb(221, 221, 221);
     outline: 0;
@@ -93,18 +93,18 @@
     padding: 10px;
     transition: width 1s ease-in-out;
 }
-.top__search__label{
+.top__label{
     display: flex;
     gap: 10px;
 }
-.top__search__label input:focus{
+.top__label input:focus{
     border-bottom: 1px solid rgb(221, 221, 221);
     width: 300px;
 }
 .top__button span{
     display: flex;
 }
-.top__search__label{
+.top__label{
     width: 0px;
     gap: 10px;
     flex-shrink: 0;
@@ -126,17 +126,19 @@
 }
 
 .top__image{
+    padding-top: 2px;
     height: 75px;
     width: auto;
     justify-content: center;
     background-size: contain;
+    padding-bottom: 2px;
 }
 .top__button i:nth-child(1){
     font-size: 0px;
 }
 
 
-.top__burger__search{
+.top__search--burger{
     height: 0px;
     background-color: grey;
     border: none;
@@ -181,21 +183,21 @@
     .top__button button:focus{
         border: none;
     }
-    .top__search__label input{
+    .top__label input{
         height: 0px;
         padding: 0px;
     }
-    .top__menu__item span{
+    .top__menu--item span{
         font-size: 14px;
     }
     .top__button button:hover{
         padding: 0px;
     }
-    .top__search__label{
+    .top__label{
         gap: 0px;
         width: 0px;
     }
-    .top__search__label i{
+    .top__label i{
         height: 0px;
         width: 0px;
         font-size: 0px;
@@ -205,7 +207,7 @@
         height: 20px;
         cursor: pointer;
     }
-    .top__burger__search{
+    .top__search--burger{
         height: 30px;
     }
     .top__burger:focus{
@@ -269,7 +271,7 @@
     .top__menu a{
         padding: none;
     }
-    .top__menu__item a{
+    .top__menu--item a{
         display: flex;
         column-gap: 10px;
         align-items: center;
@@ -309,7 +311,7 @@
 
 }
 @media screen and (max-width: 1150px){
-    .top__search__label input:focus{
+    .top__label input:focus{
         width: 250px;
     }
     .top__menu a{
@@ -317,18 +319,18 @@
     }
 }
 @media screen and (max-width: 1000px){
-    .top__search__label input:focus{
+    .top__label input:focus{
         width: 175px;
     }
-    .top__menu__item a{
+    .top__menu--item a{
         font-size: 1.6vw;
     }
 }
 @media screen and (max-width: 850px){
-    .top__search__label input:focus{
+    .top__label input:focus{
         width: 160px;
     }
-    .top__menu__item a{
+    .top__menu--item a{
         font-size: 1.7vw;
     }
     .top__menu a{
@@ -336,7 +338,7 @@
     }
 }
 @media screen and (max-width: 500px){
-    .top__search__label{
+    .top__label{
         gap: 5px;
     }
     .top__button span{
