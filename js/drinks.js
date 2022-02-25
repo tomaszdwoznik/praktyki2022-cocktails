@@ -51,7 +51,7 @@
     
     async function cocktails(apiLinkEnd, headerName){
         const postStream = await fetch("https://cocktail-recipes-tully4school.herokuapp.com/drinks"+apiLinkEnd+"");
-        const posts = await postStream.json();
+        let posts = await postStream.json();
         let i = 0;
         let p = 1;
         let names = [];
@@ -71,9 +71,25 @@
         // więc tutaj wystarczy wykonać funkcję na tablicy posts, która posortuje koktalje zgodnie z wyborem
         // użytkownika ;)
         if (sortType) {
-            // tutaj kod który posortuje tablicę...
-        }
-
+            posts = posts.sort((a, b) => {
+                if (sortType == "name_desc") {
+                    if (a.drinkName < b.drinkName) {
+                        return 1;
+                    }
+                    if (a.drinkName > b.drinkName) {
+                        return -1;
+                    }
+                } else if (sortType == "name_asc") {
+                    if (a.drinkName < b.drinkName) {
+                        return -1;
+                    }
+                    if (a.drinkName > b.drinkName) {
+                        return 1;
+                    }
+                }
+                return 0;    
+            });
+            }
     
         const postSection = document.querySelector("#posts");
         const postTemplate = document.querySelector("#post-template");
