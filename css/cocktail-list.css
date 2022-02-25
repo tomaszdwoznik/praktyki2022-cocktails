@@ -7,7 +7,7 @@
     color: black; 
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(auto-fill, minmax(50vw, 50vw));
+    grid-template-columns: repeat(auto-fill, minmax(60vw, 60vw));
 }
 .container--main{
     padding-top: 80px;
